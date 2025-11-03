@@ -90,6 +90,69 @@ main {
   font-weight: 300;
 }
 
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.subscription__plans {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 5rem;
+  margin: 2.5rem 0;
+  perspective: 2000px;
+  perspective-origin: top;
+}
+
+.subscription__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 33.5rem;
+  min-height: 600px;
+  padding: 2.5rem 3rem;
+  border-radius: 0.5rem;
+  background: var(--card-bg-color);
+  transition: transform 1s ease-in-out;
+}
+
+.subscription__price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  color: var(--secondary-color);
+}
+
+.subscription__price .text--small {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.subscription__description {
+  text-align: left;
+  margin: 1rem 0 4.8rem 0;
+}
+
+.subscription__description li {
+  padding-left: 0.8rem;
+  margin-top: 0.85rem;
+}
+
+.subscription__description li::marker {
+  content: "+";
+  font-size: 2.25rem;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
