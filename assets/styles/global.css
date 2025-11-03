@@ -54,6 +54,10 @@ body {
   color: var(--text-color);
 }
 
+h3 {
+  font-size: 1.35rem;
+}
+
 p {
   font-family: "Quicksand", sans-serif;
   font-size: 1.2rem;
@@ -71,6 +75,7 @@ section {
   color: var(--text-color);
   text-transform: uppercase;
   text-decoration: none;
+  line-height: 1.07rem;
   letter-spacing: 4px;
   border: none;
   cursor: pointer;
@@ -88,6 +93,10 @@ section {
   background-position: 100%;
   outline: 2px solid var(--secondary-color);
   transform: scale(1.05);
+}
+
+.subscription__card .button.button--gradient {
+  padding: 0.95rem 1rem;
 }
 
 .menu {
