@@ -201,6 +201,46 @@ section {
   text-align: center;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: var(--link-color);
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  font-size: 0.87rem;
+  transition: color 0.5s;
+}
+
+.footer__link:hover {
+  color: var(--text-color);
+}
+
+.footer__legal {
+  font-size: 0.75rem;
+  margin: 0.75rem 0 0;
+  color: var(--link-color);
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 4.4rem;
+}
+
 ::-webkit-scrollbar {
   width: 0.5rem;
 }
