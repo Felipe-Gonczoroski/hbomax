@@ -6,7 +6,7 @@ main {
 }
 
 .divider {
-  width: 700px;
+  width: 70%;
   height: 5px;
   background: var(--divider-bg-color);
 }
@@ -245,6 +245,10 @@ main {
 }
 
 @media (min-width: 1024px) {
+  .divider {
+    width: 700px;
+  }
+
   .channels__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
