@@ -36,6 +36,8 @@ main {
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 100%;
   padding: 1.5rem;
@@ -61,6 +63,11 @@ main {
   border-radius: 0.5rem;
   background: var(--card-bg-color);
   transition: transform 1s ease-in-out;
+}
+
+.subscription__plan {
+  display: flex;
+  flex-direction: column;
 }
 
 .subscription__price {
@@ -193,5 +200,46 @@ main {
   40%,
   100% {
     transform: rotate(0);
+  }
+}
+
+@media (min-width: 710px) {
+  .subscription__card {
+    max-width: 37rem;
+    min-height: 560px;
+  }
+
+  .subscription__plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .subscription__price {
+    font-size: 2rem;
+  }
+
+  .subscription__price .text--small {
+    font-size: 1rem;
+  }
+
+  .subscription__description {
+    margin-left: 0.85rem;
+  }
+
+  .subscription__description li {
+    font-size: 1.25rem;
+    padding-left: 1rem;
+    margin-top: 0.65rem;
+  }
+
+  .subscription__description li::marker {
+    font-size: 2.45rem;
+  }
+
+  .channels__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
   }
 }
