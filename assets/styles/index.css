@@ -251,3 +251,19 @@ main {
     gap: 2rem;
   }
 }
+
+@media (min-width: 1440px) {
+  .title {
+    max-width: 90%;
+  }
+
+  .subscription__plans {
+    flex-direction: row;
+    perspective: 2000px;
+    perspective-origin: top;
+  }
+
+  .subscription__card {
+    max-width: 31.25rem;
+  }
+}
