@@ -253,6 +253,12 @@ main {
 }
 
 @media (min-width: 1440px) {
+  .container {
+    position: relative;
+    background: url("../images/background-movies-series.png") no-repeat;
+    background-size: cover;
+  }
+
   .title {
     max-width: 90%;
   }
