@@ -266,4 +266,18 @@ main {
   .subscription__card {
     max-width: 31.25rem;
   }
+
+  .channels {
+    width: 83%;
+    margin: 0 auto 6.25rem;
+  }
+
+  .channels__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    column-gap: 2.5rem;
+  }
 }
