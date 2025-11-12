@@ -6,7 +6,7 @@ main {
 }
 
 .divider {
-  width: 70%;
+  width: 700px;
   height: 5px;
   background: var(--divider-bg-color);
 }
@@ -271,6 +271,16 @@ main {
 
   .subscription__card {
     max-width: 31.25rem;
+  }
+
+  .subscription__plans:has(.subscription__card:nth-child(1):hover)
+    .subscription__card:nth-child(2) {
+    transform: rotateY(-45deg);
+  }
+
+  .subscription__plans:has(.subscription__card:nth-child(2):hover)
+    .subscription__card:nth-child(1) {
+    transform: rotateY(45deg);
   }
 
   .channels {
