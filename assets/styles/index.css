@@ -306,4 +306,22 @@ main {
   html {
     font-size: 18px;
   }
+
+  .title {
+    max-width: 60%;
+  }
+
+  .channels {
+    width: 50%;
+    margin-top: 7.25rem;
+  }
+
+  .channels__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    column-gap: 2.5rem;
+  }
 }
